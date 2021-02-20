@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Hcard"
+        android:layout_width="match_parent"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp"
+        android:layout_height="80dp"
+
+        android:orientation="vertical"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center">
+
+<RelativeLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+        <TextView
+        android:textColor="#5C4494"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/NameTxt"
+            android:text="!name"
+android:layout_marginTop="10dp"
+            android:textSize="16dp"
+            android:autoSizeTextType="uniform"
+            />
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/NameTxt"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/timd"
+        android:text="!time"
+
+        android:textSize="14dp"
+        android:autoSizeTextType="uniform"
+        />
+
+    <TextView
+       android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Amt"
+        android:textColor="#5C4494"
+        android:text="Rs.000.00/-"
+        android:layout_alignParentRight="true"
+        android:textSize="15dp"
+        />
+    <TextView
+       android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/status"
+        android:text="Success"
+android:layout_alignParentRight="true"
+        android:textSize="15dp"
+
+        />
+</RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

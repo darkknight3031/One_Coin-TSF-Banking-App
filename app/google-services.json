@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "421109399141",
+    "firebase_url": "https://pizza-bff1a.firebaseio.com",
+    "project_id": "pizza-bff1a",
+    "storage_bucket": "pizza-bff1a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:421109399141:android:5ec7c3e6ef68a74f71908c",
+        "android_client_info": {
+          "package_name": "com.example.onecoin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "421109399141-kh28d7c2los09v9spqavh0s0500ol57l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5Y6guW5JsYANWcRERzF2We1kGqgItIWI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "421109399141-kh28d7c2los09v9spqavh0s0500ol57l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

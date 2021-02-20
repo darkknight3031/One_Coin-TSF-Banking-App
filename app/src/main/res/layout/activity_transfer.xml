@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:background="#5C4494"
+    tools:context=".Transfer_Activity">
+
+     <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="370dp"
+        android:background="@drawable/upper">
+
+         <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/tImg"
+             android:layout_width="110dp"
+             android:layout_height="110dp"
+             android:layout_marginTop="90dp"
+android:elevation="3dp"
+             android:layout_centerHorizontal="true"/>
+
+         <TextView
+            android:id="@+id/tname"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="!name"
+             android:layout_below="@id/tImg"
+             android:layout_marginTop="5dp"
+             android:textSize="22dp"
+             android:layout_centerHorizontal="true"
+             android:textColor="#5C4494"/>
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="!email"
+             android:id="@+id/temail"
+             android:layout_below="@id/tname"
+
+            android:textSize="16dp"
+             android:layout_centerHorizontal="true"
+             />
+
+     </RelativeLayout>
+
+    <RelativeLayout
+       android:id="@+id/tInfo"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:elevation="3dp"
+        android:layout_marginTop="280dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/black_draw2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Current Balance"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:id="@+id/cText"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₹000.0"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"
+            android:textSize="22dp"
+            android:layout_below="@id/cText"
+            android:id="@+id/BalText"
+
+            android:layout_marginLeft="30dp"/>
+
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="XXXX XXXX XXXX "
+            android:textColor="#707070"
+            android:textSize="18dp"
+            android:layout_below="@id/BalText"
+            android:id="@+id/CardTxt"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="30dp"/>
+        <ImageView
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_width="80dp"
+            android:layout_height="65dp"
+            android:src="@drawable/visa"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/transferAmt"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:elevation="3dp"
+        android:layout_below="@id/tInfo"
+        android:background="@drawable/black_draw2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="30dp"
+            android:textSize="17dp"
+            android:id="@+id/tTxt"
+            android:text="Transfer Amount"/>
+
+        <EditText
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+   android:inputType="numberDecimal"
+            android:textColor="@color/white"
+            android:layout_below="@id/tTxt"
+            android:id="@+id/EdtBal"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="25dp"
+        android:tint="#5C4494"
+        android:id="@+id/Backb"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/ic_baseline_arrow_back_ios_24"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        app:cardCornerRadius="30dp"
+        android:id="@+id/TransferBtn"
+        android:layout_below="@+id/transferAmt"
+     android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+
+        android:layout_marginTop="35dp">
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Transfer Money"
+            android:textSize="17dp"
+            android:textColor="#5C4494"
+            />
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
